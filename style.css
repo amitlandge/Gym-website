@@ -3,19 +3,25 @@ body {
   margin: 0%;
   padding: 0%;
   font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
+}
+html {
+  font-size: 62.2%;
 }
 .navbar {
   position: fixed;
-  width: 100vw;
-  height: 9vh;
+  width: 100%;
+  height: 7rem;
   background-color: blue;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+  justify-content: space-around;
   align-items: center;
   color: aliceblue;
   z-index: 1;
+}
+.container {
+  z-index: -100;
 }
 .nav_list {
   display: flex;
@@ -26,6 +32,7 @@ body {
   position: absolute;
   top: 0%;
   left: 0%;
+  margin-right: auto;
 }
 .nav_list li {
   list-style-type: none;
@@ -33,10 +40,10 @@ body {
 }
 .nav_list li a {
   text-decoration: none;
-  font-size: 3vmin;
+  font-size: 2rem;
   color: aliceblue;
-  /* padding: 2px 14px; */
-  transition: all 0.4s ease-in-out;
+  letter-spacing: 1px;
+  transition: all 0.4s;
   margin: 0%;
   padding: 2px 7px;
 }
@@ -46,10 +53,10 @@ body {
 }
 .logo h1 {
   position: absolute;
-  top: 0.7%;
+  top: 10%;
   right: 5%;
   margin: 0%;
-  font-size: 4vmin;
+  font-size: 3rem;
 }
 .main_sec {
   position: relative;
@@ -58,11 +65,9 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0%;
-  /* background-image: url("gymbg.jpg");
-  background-repeat: no-repeat; */
+
   background: url(gymbg.jpg) no-repeat center center scroll;
 
-  z-index: -1;
   color: aliceblue;
   display: flex;
   flex-direction: column;
@@ -71,13 +76,13 @@ body {
   align-items: center;
 }
 .main_sec h1 {
-  font-size: 7.2vmin;
+  font-size: 6rem;
   text-transform: uppercase;
   margin: 7px 0px;
 }
 .main_sec h3 {
   text-transform: uppercase;
-  font-size: 4vmin;
+  font-size: 3rem;
   padding: 0%;
   margin: 7px 0px;
 }
@@ -86,20 +91,22 @@ body {
 }
 #btn {
   outline: none;
-  padding: 5px 12px;
+  padding: 0.6rem 1.5rem;
   font-weight: bolder;
   background-color: blue;
   border: 0.8px solid white;
   color: aliceblue;
-  /* border: none; */
+  font-size: 2rem;
   border-radius: 3px;
-  z-index: 1;
+
+  cursor: pointer;
+  transition: all 0.4s;
 }
 #btn:hover {
   background-color: red;
   border: 1px solid white;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 .font_red {
   color: red;
@@ -116,16 +123,15 @@ body {
   background-color: rgb(198, 22, 22);
 }
 .card {
-  /* flex: 1; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 15%;
+  width: 20%;
   height: auto;
   margin-left: 5rem;
-  /* background-color: blue; */
+
   background-color: aliceblue;
   color: black;
   box-shadow: 1px 2px 5px rgb(63, 61, 61);
@@ -143,14 +149,15 @@ body {
 }
 .card .btn1 {
   outline: none;
-  padding: 5px 12px;
+  padding: 0.6rem 1.5rem;
   font-weight: bolder;
   background-color: blue;
   border: 0.8px solid white;
   color: aliceblue;
-  /* border: none; */
+
   border-radius: 3px;
   margin-bottom: 1rem;
+  transition: all 0.4s;
 }
 .card .btn1:hover {
   background-color: red;
@@ -158,7 +165,7 @@ body {
   cursor: pointer;
 }
 .features h2 {
-  font-size: 6vmin;
+  font-size: 5rem;
   text-transform: uppercase;
 }
 .about_sec {
@@ -179,30 +186,29 @@ body {
   align-items: center;
 }
 .content_sec h1 {
-  font-size: 8vmin;
+  font-size: 7rem;
   color: red;
 }
 .content_sec p {
-  font-size: 2.8vmin;
+  font-size: 2rem;
   text-align: center;
   font-weight: 400;
 }
 .content_sec h2 {
-  font-size: 5vmin;
+  font-size: 4rem;
   color: red;
 }
 .content_sec h3 {
-  font-size: 5vmin;
-  color: red;
+  font-size: 3rem;
 }
 .content_btn .btn2 {
   outline: none;
-  padding: 8px 12px;
+  padding: 0.6rem 1.2rem;
   font-weight: bolder;
   background-color: blue;
   border: 0.8px solid white;
   color: aliceblue;
-  /* border: none; */
+
   border-radius: 3px;
   margin-bottom: 1rem;
   margin-left: 1rem;
@@ -223,7 +229,7 @@ body {
   align-items: center;
 }
 .contact_sec h1 {
-  font-size: 7vmin;
+  font-size: 6rem;
   color: aliceblue;
 }
 .contact_form {
@@ -237,7 +243,6 @@ body {
   background-color: aliceblue;
 }
 .form_sec {
-  /* width: 60%; */
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -247,7 +252,7 @@ body {
 }
 input {
   width: 90%;
-  margin: 1.5rem 0.5rem;
+  margin: 2rem auto;
   padding: 0.5rem;
   border-radius: 3px;
   outline: none;
@@ -259,12 +264,12 @@ input {
 }
 .btn3 {
   outline: none;
-  padding: 8px 12px;
+  padding: 0.6rem 1.2rem;
   font-weight: bolder;
   background-color: blue;
   border: 0.8px solid white;
   color: aliceblue;
-  /* border: none; */
+
   border-radius: 3px;
   margin-bottom: 1rem;
   margin-left: 1rem;
@@ -274,11 +279,15 @@ input {
   border: 1px solid white;
   cursor: pointer;
 }
-@media only screen and (max-width: 990px) {
-  .container{
-    height: auto;
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 55%;
   }
-  .navbar{
+  .logo > h1 {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .navbar {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -286,75 +295,68 @@ input {
     width: 100%;
     margin: 0%;
     padding: 0%;
-
+    height: 15rem;
   }
-  .nav_list{
+  .nav_list {
     display: flex;
-    flex-direction: column;
+
     width: 100%;
     justify-content: center;
     align-items: center;
-    display: none;
+
     z-index: 300;
     position: absolute;
     top: 55%;
     margin: 0%;
     padding: 0%;
+  }
+  .nav_list li {
+    margin: 1rem;
+  }
+  .about_sec {
+    flex-direction: column-reverse;
+  }
 
-  }
-  .nav_list li{
-    margin: 10px;
-  }
-
-  .bars {
-    width: 25px;
-    height: 30px;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 1%;
-    left: 2%;
-    z-index: 100;
-    /* background-color: aliceblue; */
-    /* cursor: pointer; */
-  }
-  .bar {
-    border-bottom: 3px solid red;
-    width: 100%;
-    padding: 3px;
-    z-index: 400;
-    cursor: pointer;
-  }
- 
   .active {
-   
-    /* width: 100%; */
     display: flex;
-    
+
     background-color: blue;
   }
-  .features{
+  .features {
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .card{
+  .card {
     display: block;
     text-align: center;
     height: auto;
-    width: 70%;
+    width: 50%;
     margin: 0%;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
-  .contact_sec{
+  .contact_sec {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .contact_form{
+  .contact_form {
     width: 60%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 50%;
+  }
+  .main_sec{
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 35%;
   }
 }
